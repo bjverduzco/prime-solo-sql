@@ -24,8 +24,9 @@ SELECT username FROM syntax_practice WHERE username LIKE '%a%';
 --with an account balance of 0.00 and a transactions_attempted of 0. Give them
 -- a new account balance of 10.00.
 UPDATE syntax_practice SET account_balance = '10.00' WHERE account_balance = '0.00' AND transactions_attempted = '0';
+
 -- 4. Select all users that have attempted 9 or more transactions.
-SELECT username FROM syntax_practice WHERE transactions_attempted > '9';
+SELECT username FROM syntax_practice WHERE transactions_attempted > '8';
 
 -- 5. Get the username and account balance of the 3 users with the highest balances,
 -- sort highest to lowest balance. NOTE: Research LIMIT
